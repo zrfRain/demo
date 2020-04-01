@@ -17,7 +17,11 @@ public class TestController {
     }
 
 
-
+    @GetMapping("/test2")
+    public User test2(){
+        log.info("test2");
+        return new User("user","pwd");
+    }
 
 
 }
