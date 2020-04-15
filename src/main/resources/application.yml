@@ -1,0 +1,27 @@
+server:
+  port: 8888
+
+
+
+my:
+  alipay:
+    url: https://openapi.alipay.com/gateway.do
+    appId: 2021001151681088
+    privateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDADYbtzB/V8cmOm4zjmEBZYaaEYaqHJmQ7YA9dqMMPqTWhV5HxeJS7aHLpm46eDWq5WXD5zK4PJhG91yFq9lG0VH1l399UEFuc63T+MyVaZoT1Oe4AevOqmYwls5hfbNf40UHh+OJSmqNQS9aoAVLljBrwhwM5Cu6KJaBcWyeq4LHlPMogdDWM66r6cnVqWUrygnGsYHqfrhqNUSvAvO0s6FiIpQ7Wrtioz3ulo3kuuMD3Dzrj+y3wkXImvWgPx4/3qrJgO0a8PGMsGSNY2R2wJdvJ9fQOWgAP+I5q8cVHoncTFLJKhTH03XB6iTQ3LPXFffVWpihi34CVZvzDGPBDAgMBAAECggEAdW3P+sa9EIvuugvScbc+YWib8IXnRwvqbYOm4ZW273R/Hk/1JLid+Jk86in7YhjCEOLneVX1d73HS1SnUkeaXbDrm8bvPu9hlOlDd8q+JDBbS7ZIGHMVWlLYppTRrkdXJwSMTCdp+ygig45big6FKWYpcria993/TOkEzHPQJWJ9vM0ANh/4f6Uv80cnX4GjmI/DXOdVtKBZrlPyuZRjZ7pLArKSWPACexuVeUxai320sAt3CZ7k24f6P5N+p47TLEIj0FtgfcwnR64a2gT18AXp8jlBTKLxNE2S0j4YKjOjR9nvjS7i5KHYI3bG8ZVxaeX0UUnAAe0EiV3SX/npAQKBgQD2RJmQkjl8FtZMj/0uOaXDAoSX0P06wmS0gT9fRryyp5i/4RqzleZIhHPpaBDXTCrq7WweK5Dj8z7ww9lS4PpjCJ/uSxml/PYTh6m5PYaN2jAnTaPc7pxiuzcvGBZFN809QYZhF83WbxFiB+soaPkmEZg75VOrUYx2W51G/X6AEwKBgQDHpHQFJmBzchyg9JvZAotXHYHjlrt/D0hjJHaTthwM9Qw37R0oU7q990r1GnMtJ8Cv+f9ECoIDSqs+O7SdXbwWh1xvotvpQw1yUfauYt/6XTfTgd74+9X0rfJW5FsnFLcJf80H0Alip8DvflP5qOqoGSV3q+eC3tlCZ1x35Oe1EQKBgQC1bsbgXwpg5IZPc8moc6ou6Lz9CGh4EN2Wqp4guIGu8ZC01MgSRL6a8JJhBF1b8O6xk+eStrARcJUPVorW548wxRrmuYeU5a/5pXoiUjS+b2AIpMezrkui5aD7XjiSGFFp7sts3te0QrHA0mqqo+Pi6xWIEyU4U2Uzkb1mnr3C5wKBgCtZ65OetLz833iYBSuHYOiG0Mix138Mu4RDy7fhiI/Lul5+j6FNJTTQ+SbmGnKIuk+8MpD80ySR10OJRXwSeaBOvmTDcYticw4K/Ez7zXUZPuEfx2I7lUcvansx1RVUazaV2NjEdPVGRh/7R5Lj+iiMZVVqL7h8WaMQvMSQITxxAoGBAId1pFQmyBfnWPrn4rJOUvMJkeBvCRgnonusqidpXKcZKl7eiWmjugUi1M6UxCACCwlMP4Zy8eiOX1n4ML1HkmRLo/3g5orl+kDmdR2ezhh74ZymTgszzo/68sRRtbrEekSJTQoc93SdzMbrUk0oiNQaKJcOcNWCxV2mJ30Wv8om
+    format: JSON
+    charset: UTF-8
+    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiQTW8kEYHdAbj/jk/Z2PzqoQ45/1GOoVCdPeC08kknITssC7rWuwNfAEAgRYl/pLkV9hdqZMmjER7f6iBh1u4opx+TXhBRkPtximuRWr+4xvEXW5kVEANKeNmmXRjNJne3eMmA7EFhIYudbhLrXHKJMzo5gYFqgtOvctKwJiZ8QirVgj5JFwnzfkHfWezUHqfWeAOZNY2ld0pjQJABZ7o+jHNftInr/Uka+dmrDngTt3rimB3sjLqF2pyMCC369gQvhz3mja1X2+F+s6NcKWAPjn3PYZQwTv61kIXH2b45iu9YWaFbqY0v3HMF6diIegwCGPz5iSEzltH5b84JPcqQIDAQAB
+    sign_type: RSA2
+
+
+
+redis:
+  hostName: 127.0.0.1
+  port: 6379
+  password:
+  maxTotal: 5000      # 连接池最大连接数
+  maxWait: 10000      # 连接池最大阻塞等待时间
+  maxIdle: 1000      # 连接池中的最大空闲连接
+  minIdle: 10      # 连接池中的最小空闲连接
+  timeout: 10000      # 连接超时时间
+  database: 8
